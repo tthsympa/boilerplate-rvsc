@@ -1,0 +1,7 @@
+dist/
+node_modules/
+public/
+test-results/
+pnpm-lock.yaml
+yarn.lock
+package-lock.json

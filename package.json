@@ -4,11 +4,15 @@
   "private": true,
   "type": "module",
   "version": "0.0.0",
+  "author": {
+    "name": "TTH",
+    "url": "https://tth.quest"
+  },
   "scripts": {
     "build": "vite build",
     "clean": "rm -rf ./node_modules",
     "dev": "vite --port 3001",
-    "format": "prettier -c --config prettier.config.js \"./**/*.{js,ts,tsx,json}\"",
+    "format": "prettier -c --config prettier.config.mjs \"./**/*.{js,ts,tsx,json}\"",
     "lint": "eslint --config eslint.config.mjs .",
     "start": "vite preview --port 3002",
     "tsc": "tsc --noEmit",

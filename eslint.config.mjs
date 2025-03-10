@@ -50,11 +50,8 @@ export default [
         {
           pathGroups: [
             {
-              // Minimatch pattern used to match against specifiers
               pattern: '@/**',
-              // The predefined group this PathGroup is defined in relation to
               group: 'internal',
-              // How matching imports will be positioned relative to "group"
               position: 'after',
             },
           ],

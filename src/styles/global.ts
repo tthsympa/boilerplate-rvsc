@@ -22,6 +22,7 @@ export const GlobalStyle = createGlobalStyle`
   body {
     max-width: 100vw;
     font-family: 'Inter';
+    font-size: 50%;
   }
 
   a {

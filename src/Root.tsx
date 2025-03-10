@@ -1,4 +1,3 @@
-import { Helmet } from 'react-helmet-async'
 import styled from 'styled-components'
 import { Title } from '@/components/title'
 import ellipsis from '@/assets/ellipsis.svg'
@@ -59,29 +58,25 @@ const Ellipsis = styled.img`
 
 export default function Root() {
   return (
-    <>
-      <Helmet defaultTitle="R.V.SC - Boilerplate for a React project" />
+    <Main>
+      <Container>
+        <Boilerplate>Boilerplate</Boilerplate>
+        <Title>R.V.SC</Title>
+        <Subtitle>
+          <Emphasis $color="#58C4DC">R</Emphasis>eact.
+          <Emphasis $color="#f8ae1a">V</Emphasis>ite.
+          <Emphasis $color="#C961B4">S</Emphasis>
+          tyled<Emphasis $color="#C961B4">C</Emphasis>omponents
+        </Subtitle>
 
-      <Main>
-        <Container>
-          <Boilerplate>Boilerplate</Boilerplate>
-          <Title>R.V.SC</Title>
-          <Subtitle>
-            <Emphasis $color="#58C4DC">R</Emphasis>eact.
-            <Emphasis $color="#f8ae1a">V</Emphasis>ite.
-            <Emphasis $color="#C961B4">S</Emphasis>
-            tyled<Emphasis $color="#C961B4">C</Emphasis>omponents
-          </Subtitle>
+        <Github href="https://github.com/tthsympa/boilerplate-rvsc">
+          Github
+        </Github>
 
-          <Github href="https://github.com/tthsympa/boilerplate-rvsc">
-            Github
-          </Github>
+        <Author href="https://github.com/tthsympa">@TTH</Author>
 
-          <Author href="https://github.com/tthsympa">@TTH</Author>
-
-          <Ellipsis src={ellipsis} alt="Ellipsis" />
-        </Container>
-      </Main>
-    </>
+        <Ellipsis src={ellipsis} alt="Ellipsis" />
+      </Container>
+    </Main>
   )
 }
